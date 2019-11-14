@@ -1,0 +1,15 @@
+_export:
+  !include : config/params.yml
+
++ingest:
+  py>: py_scripts.{{cookiecutter.main_script}}.run
+  database: ${td.database}
+  table: ${td.table}
+  # You can add additional arguments like:
+  # arg1: foo
+  # arg2: bar
+  docker:
+    image: {{cookiecutter.docker_image}}
+  _env:
+    TD_API_KEY: ${secret:td.apikey}
+    TD_API_SERVER: ${secret:td.apiserver}

@@ -1,0 +1,4 @@
+# Target Database on Treasure Data
+td:
+  database: {{cookiecutter.database}}
+  table: {{cookiecutter.table}}
