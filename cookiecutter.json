@@ -4,6 +4,6 @@
   "main_script": "my_script",
   "database": "my_db",
   "table": "dest_table",
-  "docker_image": "digdag/digdag-python:3.7",
+  "docker_image": "digdag/digdag-python:3.9",
   "digdag_path": "digdag"
 }
